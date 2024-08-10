@@ -8,7 +8,6 @@ INSTALLDIR=/usr/local/bin
 
 unarj: unarj.o decode.o environ.o
 	$(CC) $(CFLAGS) -o unarj unarj.o decode.o environ.o
-	strip unarj
 
 clean:
 	rm -f core unarj *.o *.out *~
